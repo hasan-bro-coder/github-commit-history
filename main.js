@@ -63,7 +63,7 @@ for (let i = 0; i < 52; i++) {
       if (el == "1") {
         // console.log(z);
         let date = dayOfYearToMonthDay(z)
-        exec_cmd(`git add . ; git commit --date="2010-${date.month}-${date.day} 00:01:09" -m "today is 2010-MM-DD"; git push -u origin `)
+        exec_cmd(`git add . ; git commit --date="2010-${date.month}-${date.day} 00:01:09" -m "today is 2010-MM-DD"; git push -u origin master`)
         await sleep(10000);
       }
     }
