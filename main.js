@@ -1,5 +1,5 @@
 const { exec } = require("child_process");
-const { readFile } = require("fs");
+const fs = require('fs');
 
 let pattern = `
 011****11**11111111**11111111**11111111**111******11
