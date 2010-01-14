@@ -63,7 +63,7 @@ for (let i = 0; i < 52; i++) {
       if (el == "1") {
         // console.log(z);
         let date = dayOfYearToMonthDay(z)
-        fs.writeFile('date.txt', data, (err) => {
+        fs.writeFile('date.txt', `2010-${date.month}-${date.day}`, (err) => {
           if (err) throw err;
           console.log('Data written to file successfully!');
         });
