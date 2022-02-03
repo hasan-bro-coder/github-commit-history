@@ -66,8 +66,8 @@ for (let i = 0; i < 52; i++) {
         fs.writeFile('date.txt', `2022-${date.month}-${date.day}`, (err) => {
           if (err) throw err;
           console.log('Data written to file successfully!');
+          exec_cmd(`git add . ; git commit --date="2022-${date.month}-${date.day} 00:01:09" -m "today is 2022-${date.month}-${date.day}"; git push -u -f origin main`)
         });
-        exec_cmd(`git add . ; git commit --date="2022-${date.month}-${date.day} 00:01:09" -m "today is 2022-${date.month}-${date.day}"; git push -u -f origin main`)
         await sleep(10000);
       }
     }
